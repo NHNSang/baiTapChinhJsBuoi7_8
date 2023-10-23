@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- Bài tập chính JS buổi 18 
+    Đề bài: Cho người dùng nhập vào các số nguyên và lưu trữ trong mãng
+    -->
+    <!-- Tạo layout cho người dùng thêm số -->
+    <div class="container ">
+      <h2 class="text-center py-3">Bài tập chính JS buổi 7-8</h2>
+      <p class="text-center">Nhập số nguyên</p>
+      <div class="d-flex justify-content-center ">
+        <div class="mb-3">
+          <input type="text"
+            class="form-control" name="" id="nhapSo" aria-describedby="helpId" placeholder="Nhập số N" style="width:280px;">
+        </div>
+        <button id="nut" class="btn btn-danger mx-2" style="height: 37px;">Thêm số</button>
+      </div>
+      <div id="ketQua" class="bg bg-danger text-white" style="width: 30%; margin: 0 auto; padding: 2px;"></div> 
+
+      <!-- Câu 2 -->
+      <div class="d-flex justify-content-center py-4">
+        <button id="nut2" class="btn btn-danger">Tính tổng số chẳn</button>
+      </div>
+      <div id="ketQua2" class="bg bg-danger text-white" style="width: 30%; margin: 0 auto; padding: 2px;"></div>
+
+      <!-- Câu 3 -->
+      <div class="d-flex justify-content-center py-4">
+        <button id="nut3" class="btn btn-danger">Đếm số dương</button>
+      </div>
+      <div id="ketQua3" class="bg bg-danger text-white" style="width: 30%; margin: 0 auto; padding: 2px;"></div>
+
+      <!-- Câu 4 -->
+      <div class="d-flex justify-content-center py-4">
+        <button id="nut4" class="btn btn-danger">Tìm số nhỏ nhất</button>
+      </div>
+      <div id="ketQua4" class="bg bg-danger text-white" style="width: 30%; margin: 0 auto; padding: 2px;"></div>
+
+      <!-- Câu 5 -->
+      <div class="d-flex justify-content-center py-4">
+      <button id="nut5" class="btn btn-danger">Tìm số dương nhỏ nhất</button>
+      </div>
+      <div id="ketQua5" class="bg bg-danger text-white" style="width: 30%; margin: 0 auto; padding: 2px;"></div>
+
+      <!-- Câu 6 -->
+      <div class="d-flex justify-content-center py-4">
+        <button id="nut6" class="btn btn-danger">Tìm số chẳn cuối cùng</button>
+        </div>
+        <div id="ketQua6" class="bg bg-danger text-white" style="width: 30%; margin: 0 auto; padding: 2px;"></div>
+
+        <!-- Câu 7 -->
+      <div class="d-flex justify-content-center py-4">
+        <button id="nut7" class="btn btn-danger">Đổi chổ</button>
+        </div>
+        <div id="ketQua7" class="bg bg-danger text-white" style="width: 30%; margin: 0 auto; padding: 2px;"></div>
+
+      <!-- Câu 8 -->
+      <div class="d-flex justify-content-center py-4">
+        <button id="nut8" class="btn btn-danger">Sắp xếp tăng dần</button>
+        </div>
+        <div id="ketQua8" class="bg bg-danger text-white" style="width: 30%; margin: 0 auto; padding: 2px;"></div>
+
+      <!-- Câu 9 -->
+      <div class="d-flex justify-content-center py-4">
+        <button id="nut9" class="btn btn-danger">Tìm số nguyên tố đầu tiên</button>
+        </div>
+        <div id="ketQua9" class="bg bg-danger text-white" style="width: 30%; margin: 0 auto; padding: 2px;"></div>
+
+      <!-- Câu 10 -->
+      <div class="d-flex justify-content-center py-4">
+        <button id="nut10" class="btn btn-danger">Đếm số nguyên</button>
+        </div>
+        <div id="ketQua10" class="bg bg-danger text-white" style="width: 30%; margin: 0 auto; padding: 2px;"></div>
+
+      <!-- Câu 11 -->
+      <div class="d-flex justify-content-center py-4">
+        <button id="nut11" class="btn btn-danger">So sánh số lượng số âm và số dương</button>
+        </div>
+        <div id="ketQua11" class="bg bg-danger text-white" style="width: 30%; margin: 0 auto; padding: 2px;"></div>
+
+
+
+
+
+
+
+
+
+
+    <!-- Câu 1: Tổng các số dương trong mãng
+        1)input: number
+        2)output: number
+        3)process: Để tính tổng số dương 
+        -Cho người dùng nhâp vào input(array) giá trị số N
+        -Dùng vòng lập for để chạy ra xem thử giá trị đó là những số nào
+        -Tạo if nếu array[] > 0 thì sẽ lấy giá trị đó bằng cách tạo 1 biến và cho giá trị +=
+        - sau đó render ra kết quả
+     -->
+     <!-- Câu 2: Đếm các số dương trong mãng
+        1)input: number
+        2)output: number
+        3)process: Để đếm các số dương 
+        -Cho người dùng nhâp vào input(array) giá trị số N
+        -Dùng vòng lập for để chạy ra xem thử giá trị đó là những số nào 
+        -Tạo if nếu array[] > 0 thì sẽ lấy giá trị đó bằng cách tạo 1 biến và cho giá trị ++
+        - sau đó render ra kết quả
+     -->
+
+     
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
